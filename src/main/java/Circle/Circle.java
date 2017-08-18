@@ -3,26 +3,26 @@ package Circle;
 // Zadanie Slajd 9, 12
 public class Circle {
 
-    private double _radious = 1.0;
+    private double _radius = 1.0;
     private String _color = "red";
 
     public Circle(){ }
 
-    public Circle(double radious){
-        this._radious = radious;
+    public Circle(double radius){
+        this._radius = radius;
     }
 
-    public Circle(double radious, String color){
-        this._radious = radious;
+    public Circle(double radius, String color){
+        this._radius = radius;
         this._color = color;
     }
 
-    public double getRadious() {
-        return _radious;
+    public double getRadius() {
+        return _radius;
     }
 
-    public void setRadious(double radious) {
-        this._radious = radious;
+    public void setRadius(double radius) {
+        this._radius = radius;
     }
 
     public String getColor() {
@@ -34,14 +34,13 @@ public class Circle {
     }
 
     public double getArea(){
-        return Math.PI * Math.pow(_radious, 2.0);
+        return Math.PI * Math.pow(_radius, 2.0);
     }
 
-    @Override
     public String toString() {
         StringBuilder response = new StringBuilder();
-        response.append("Circle[radious=");
-        response.append(_radious);
+        response.append("Circle[radius=");
+        response.append(_radius);
         response.append(", color=");
         response.append(_color);
         response.append(']');

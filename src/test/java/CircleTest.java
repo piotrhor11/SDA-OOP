@@ -13,7 +13,7 @@ public class CircleTest {
     @Test
     public void circleSimpleRadious(){
         Circle testObject = new Circle();
-        Assert.assertEquals(1.0,testObject.getRadious(),0.01);
+        Assert.assertEquals(1.0,testObject.getRadius(),0.01);
     }
 
     @Test
@@ -25,13 +25,13 @@ public class CircleTest {
     @Test
     public void  circleWithRadiousRadious(){
         Circle testObject = new Circle(5.0);
-        Assert.assertEquals(5.0,testObject.getRadious(),0.01);
+        Assert.assertEquals(5.0,testObject.getRadius(),0.01);
     }
 
     @Test
     public void circleWithRadiousAndColor(){
         Circle testObject = new Circle(6.0, "blue");
-        Assert.assertEquals(6.0,testObject.getRadious(),0.01);
+        Assert.assertEquals(6.0,testObject.getRadius(),0.01);
         Assert.assertEquals("blue",testObject.getColor());
     }
 
@@ -45,8 +45,8 @@ public class CircleTest {
     public void setRadious(){
         double radious = 8.0;
         Circle testObject = new Circle();
-        testObject.setRadious(radious);
-        Assert.assertEquals(radious,testObject.getRadious(),0.01);
+        testObject.setRadius(radious);
+        Assert.assertEquals(radious,testObject.getRadius(),0.01);
     }
 
     @Test
