@@ -1,6 +1,6 @@
 package Time;
 
-public class Time {
+public class Time {         //ToDo
 
     private int _hour;
     private int _minute;
@@ -11,6 +11,8 @@ public class Time {
         this._minute = minute;
         this._second = second;
     }
+
+
 
 
 }
