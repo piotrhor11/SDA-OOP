@@ -20,18 +20,24 @@ public class Circle extends Shape{
     }
 
     public void setRadious(double radious) {
-        this._radious = radious;
+        _radious = radious;
     }
 
     public double getArea(){
         return Math.PI * Math.pow(_radious, 2d);
     }
 
+    public double getPerimeter(){
+        return 2 * Math.PI * _radious;
+    }
+
     @Override
     public String toString() {                      //ToDo
-        StringBuilder sb = new StringBuilder();
-        sb.append("A Circle with radious=")
-            .append()
-                .append()
+        StringBuilder sb = new StringBuilder()
+            .append("A Circle with radious=")
+            .append(_radious)
+            .append(", which is a subclass of ")
+            .append(super.toString());
+        return sb.toString();
     }
 }

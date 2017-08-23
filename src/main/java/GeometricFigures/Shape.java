@@ -29,10 +29,11 @@ public class Shape {
     }
 
     @Override
-    public String toString() {          //ToDo
-        return "Shape{" +
-                "_color='" + _color + '\'' +
-                ", _filled=" + _filled +
-                '}';
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("A Shape with color of ");
+        sb.append(_color);
+        sb.append(_filled?"filled":"not filled");
+        return  sb.toString();
     }
 }

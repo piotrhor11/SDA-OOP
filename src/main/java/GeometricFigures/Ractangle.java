@@ -49,9 +49,8 @@ public class Ractangle extends Shape{           //ToDo Poprawić nazwę -> Recta
                 .append(_width)
                 .append(" and length=")
                 .append(_length)
-                .append(" which is a subclass of ")
+                .append(", which is a subclass of ")
                 .append(super.toString());
-
         return sb.toString();
     }
 }

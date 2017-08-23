@@ -1,7 +1,5 @@
 package GeometricFigures;
 
-import java.awt.*;
-
 public class Square extends Ractangle {
 
     public Square(){};
